@@ -1,0 +1,32 @@
+@import './reset';
+
+/* CSS by Michelle Chong */
+
+/* Main Variables */
+
+/* Color */
+// Primary Color
+$red: hsl(4, 100%, 67%);
+
+// Neutral
+$blue-800: hsl(234, 29%, 20%);
+$blue-700: hsl(235, 18%, 26%);
+$grey: hsl(0, 0%,58%);
+$w: hsl(0, 0%, 100%);
+
+/* Font */
+// Body Font
+$body-font: 'Roboto', sans-serif;
+
+// Size
+$body-font-size: 1rem;
+
+// Weight
+$font-weight-400: 400;
+$font-weight-700: 700;
+
+/* Design Start */
+
+// Mobile First (375px)
+
+// Desktop (1440px)
