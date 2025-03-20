@@ -19,40 +19,43 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <main>
-    <h2>Stay updated!</h2>
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+  <main class="container">
+    <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+    <div class="content">
+      <h2 class="title">Stay updated!</h2>
+      <p class="text">Join 60,000+ product managers receiving monthly updates on:</p>
 
-    <ul>
-      <li>Product discovery and building what matters</li>
-      <li>Measuring to ensure updates are a success</li>
-      <li>And much more!</li>
-    </ul>
+      <ul>
+        <li class="text">Product discovery and building what matters</li>
+        <li class="text">Measuring to ensure updates are a success</li>
+        <li class="text">And much more!</li>
+      </ul>
 
-    <form id="subscribeForm">
-      <label for="email" id="email">Email address</label>
-      <input 
-        id="email" 
-        name="email" 
-        type="email"
-        class="emailInput"
-        aria-label="Enter your email"
-        autoComplete 
-        required
-      >
+      <form id="subscribeForm">
+        <label for="email" id="email">Email address</label>
+        <input 
+          id="email" 
+          name="email" 
+          type="email"
+          class="emailInput"
+          aria-label="Enter your email"
+          autoComplete 
+          required
+        >
 
-      <button
-        type="submit"
-        id="subscribeForm"
-        value="Subscribe to monthly newsletter">
-        Subscribe to monthly newsletter
-      </button>
-    </form>
+        <button
+          type="submit"
+          id="subscribeForm"
+          value="Subscribe to monthly newsletter">
+          Subscribe to monthly newsletter
+        </button>
+      </form>
+    </div>
   </main> 
 
   <section id="successMesage" class="hidden" aria-live="polite">
-    <h2>Thanks for subscribing!</h2>
-    <p>A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+    <h2 class="title">Thanks for subscribing!</h2>
+    <p class="text">A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
     <button id="dismissBtn">Dismiss Message</button>
   </section>
 </body>

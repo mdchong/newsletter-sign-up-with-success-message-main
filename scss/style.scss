@@ -27,6 +27,47 @@ $font-weight-700: 700;
 
 /* Design Start */
 
+* {
+    outline: 1px solid green;
+}
+
+*:nth-child(even) {
+    outline: 1px solid red;
+}
+
 // Mobile First (375px)
+body {
+    margin: 0;
+    font-family: $body-font;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        padding: 3rem 1.5rem;
+
+        #text {
+            margin-top: 1.25rem;
+        }
+    }
+}
+
+.title {
+    margin: 0;
+    font-size: 2.25rem;
+    color: $blue-800;
+}
+
+.text {
+    font-size: $body-font-size;
+    color: $blue-700;
+    font-weight: $font-weight-400;
+}
+
+.hidden {
+    visibility: hidden;
+}
 
 // Desktop (1440px)

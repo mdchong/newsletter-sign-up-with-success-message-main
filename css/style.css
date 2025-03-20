@@ -77,5 +77,44 @@ textarea:not([rows]) {
 /* Color */
 /* Font */
 /* Design Start */
+* {
+  outline: 1px solid green;
+}
+
+*:nth-child(even) {
+  outline: 1px solid red;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .content {
+  padding: 3rem 1.5rem;
+}
+.container .content #text {
+  margin-top: 1.25rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 2.25rem;
+  color: hsl(234, 29%, 20%);
+}
+
+.text {
+  font-size: 1rem;
+  color: hsl(235, 18%, 26%);
+  font-weight: 400;
+}
+
+.hidden {
+  visibility: hidden;
+}
 
 /*# sourceMappingURL=style.css.map */
