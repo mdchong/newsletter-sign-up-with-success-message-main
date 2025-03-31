@@ -31,16 +31,17 @@
         <li class="text">And much more!</li>
       </ul>
 
-      <form id="subscribeForm">
+      <form id="subscribeForm"> <!-- Consider novalidate if validation hinders -->
         <label for="email">Email address</label>
         <input 
           id="email" 
           name="email" 
           type="email"
           class="emailInput"
-          aria-label="Enter your email"
-          autocomplete 
+          aria-label="Enter your email address"
+          autocomplete="email"
           required
+          placeholder="e.g. example@email.com"
         >
 
         <button
@@ -52,10 +53,11 @@
     </div>
   </main> 
 
-  <section id="successMesage" class="hidden" aria-live="polite">
+  <section id="successMessage" class="hidden" aria-live="polite">
     <h2 class="title">Thanks for subscribing!</h2>
     <p class="text">A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
     <button id="dismissBtn">Dismiss Message</button>
+    <!-- change email address to user's input -->
   </section>
 </body>
 </html>
