@@ -12,7 +12,8 @@ $red: hsl(4, 100%, 67%);
 $blue-800: hsl(234, 29%, 20%);
 $blue-700: hsl(235, 18%, 26%);
 $grey: hsl(0, 0%,58%);
-$w: hsl(0, 0%, 100%);
+$grey-2: hsl(0, 0%, 75%);
+$white: hsl(0, 0%, 100%);
 
 /* Font */
 // Body Font
@@ -27,18 +28,19 @@ $font-weight-700: 700;
 
 /* Design Start */
 
-* {
-    outline: 1px solid green;
-}
+// * {
+//     outline: 1px solid green;
+// }
 
-*:nth-child(even) {
-    outline: 1px solid red;
-}
+// *:nth-child(even) {
+//     outline: 1px solid red;
+// }
 
 // Mobile First (375px)
 body {
     margin: 0;
     font-family: $body-font;
+    max-height: 100svh;
 }
 
 .container {
@@ -56,18 +58,54 @@ body {
 
 .title {
     margin: 0;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     color: $blue-800;
 }
 
 .text {
     font-size: $body-font-size;
     color: $blue-700;
-    font-weight: $font-weight-400;
+}
+
+.list {
+    list-style: none;
+    list-style-image: url('../assets/images/icon-list.svg');
+}
+
+#subscribeForm  {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2.5rem;
+
+    .label {
+        font-size: 0.875rem;
+        font-weight: $font-weight-700;
+        color: $blue-800;
+    }
+
+    #email {
+        font-size: $body-font-size;
+        color: $blue-700;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1.5px solid $grey-2; // COme back
+    }
+
+    #subscribeFormBtn {
+        padding: 1rem;
+        background-color: $blue-800;
+        color: $white;
+        font-weight: 600;
+        font-size: $body-font;
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
 }
 
 .hidden {
     visibility: hidden;
+    font-weight: $font-weight-700;
 }
 
 // Desktop (1440px)

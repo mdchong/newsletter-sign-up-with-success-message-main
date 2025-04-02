@@ -77,17 +77,10 @@ textarea:not([rows]) {
 /* Color */
 /* Font */
 /* Design Start */
-* {
-  outline: 1px solid green;
-}
-
-*:nth-child(even) {
-  outline: 1px solid red;
-}
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  max-height: 100svh;
 }
 
 .container {
@@ -103,18 +96,51 @@ body {
 
 .title {
   margin: 0;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   color: hsl(234, 29%, 20%);
 }
 
 .text {
   font-size: 1rem;
   color: hsl(235, 18%, 26%);
-  font-weight: 400;
+}
+
+.list {
+  list-style: none;
+  list-style-image: url("../assets/images/icon-list.svg");
+}
+
+#subscribeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+}
+#subscribeForm .label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+#subscribeForm #email {
+  font-size: 1rem;
+  color: hsl(235, 18%, 26%);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid hsl(0, 0%, 75%);
+}
+#subscribeForm #subscribeFormBtn {
+  padding: 1rem;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: "Roboto", sans-serif;
+  border-radius: 8px;
+  margin-top: 1rem;
 }
 
 .hidden {
   visibility: hidden;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
